@@ -1,4 +1,4 @@
-import { getAllTasks } from '../../controllers/taskController'
+import { getAllTasks, getOneTask } from '../../controllers/taskController'
 import { createRequest, createResponse } from 'node-mocks-http'
 
 describe('getAllTasks', () => {
