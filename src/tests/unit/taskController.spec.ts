@@ -6,7 +6,7 @@ describe('getAllTasks', () => {
     // Arrange
     const req = createRequest()
     const res = createResponse()
-    const expected= [
+    const expected = [
       {
         id: 1,
         name: 'Mission 01',
@@ -23,21 +23,21 @@ describe('getAllTasks', () => {
   })
 })
 
+ 
 describe('getOneTask', () => {
   test('when id 1 returns the default task', () => {
     // Arrange
     const req = createRequest()
     const res = createResponse()
-    const expected= [
+    const expected =
       {
         id: 1,
         name: 'Mission 01',
         description: 'Chatbot',
         isCompleted: false,
-      },
-    ]
-
-    req.params = { id: '1'}
+      }
+    
+    req.params = { id: '1' }
 
     // Act
     getOneTask(req, res)
@@ -45,6 +45,7 @@ describe('getOneTask', () => {
     // Assert
     expect(res.statusCode).toBe(200)
     expect(res.json()._getData()).toEqual(expected)
+
   })
 })
 
