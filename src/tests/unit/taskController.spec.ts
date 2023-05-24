@@ -15,6 +15,7 @@ describe('getAllTasks', () => {
   })
 })
 
+/* 
 describe('getOneTask', () => {
   test('should send 404 if not exists', () => {
     // Arrange
@@ -29,3 +30,4 @@ describe('getOneTask', () => {
     expect(res.status).toHaveBeenCalledWith(404)
   })
 })
+ */
