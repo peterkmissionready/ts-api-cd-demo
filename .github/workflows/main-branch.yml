@@ -8,6 +8,11 @@ on:
     branches:
       - main
 
+env:
+  PROJECT_ID: week-6-day-1 # TODO: update Google Cloud project id
+  SERVICE: tasks-api # TODO: update Cloud Run service name
+  REGION: australia-southeast2 # TODO: update Cloud Run service region
+  
 jobs:
   build_test:
     runs-on: ubuntu-latest
