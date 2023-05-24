@@ -6,14 +6,14 @@ describe('getAllTasks', () => {
     // Arrange
     const req = createRequest()
     const res = createResponse()
-    const expected = [
+    const expected =
       {
         id: 1,
         name: 'Mission 01',
         description: 'Chatbot',
         isCompleted: false,
-      },
-    ]
+      }
+    
 
     // Act
     getAllTasks(req, res)
